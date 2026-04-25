@@ -42,14 +42,17 @@ The system is verified using Verilog testbench and waveform analysis.
 
 ## 📷 Results
 
+### 🔹 Servo PWM Output
 ![Servo](docs/servo_waveform.png)
 
+### 🔹 UART Transmission Output
 ![UART](docs/uart_waveform.png)
 
+### 🔹 Ultrasonic Sensor Output
 ![Ultrasonic](docs/Ultrasonic_waveform.png)
 
+### 🔹 Full Radar System Output
 ![Radar](docs/radar_waveform.png)
-
 ## 🚀 Future Scope
 
 * Multiple object tracking

@@ -39,9 +39,16 @@ The system is verified using Verilog testbench and waveform analysis.
 * `docs/` → Diagrams & output images
 * `constraints/` → FPGA pin mapping
 
+
 ## 📷 Results
 
-(Add images here from docs folder)
+![Servo](docs/servowaveform.png)
+
+![UART](docs/uartwaveform.png)
+
+![Ultrasonic](docs/ultrasonicwaveform.png)
+
+![Radar](docs/radarwaveform.png)
 
 ## 🚀 Future Scope
 

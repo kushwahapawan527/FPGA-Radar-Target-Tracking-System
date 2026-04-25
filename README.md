@@ -46,7 +46,7 @@ The system is verified using Verilog testbench and waveform analysis.
 
 ![UART](docs/uart_waveform.png)
 
-![Ultrasonic](docs/ultrasonic_waveform.png)
+![Ultrasonic](docs/Ultrasonic_waveform.png)
 
 ![Radar](docs/radar_waveform.png)
 

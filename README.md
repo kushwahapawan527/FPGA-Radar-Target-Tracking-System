@@ -31,6 +31,9 @@ The system is verified using Verilog testbench and waveform analysis.
 4. Data is sent via UART to PC
 5. Python displays radar-like visualization
 
+## 🧩 Block Diagram
+![Block Diagram](docs/block_diagram.png)
+
 ## 📂 Project Structure
 
 * `verilog/` → FPGA design modules

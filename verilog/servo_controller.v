@@ -1,15 +1,13 @@
 module servo_controller(
-    input clk,              // 100 MHz clock
-    input [7:0] angle,      // 0 to 180 degree
-    output reg pwm          // PWM output to servo
+    input clk,
+    input [7:0] angle,
+    output reg pwm
 );
 
-// 20ms period counter (100 MHz clock)
-reg [20:0] counter = 0;
+reg [21:0] counter = 0;
+reg [21:0] pulse_width;
 
-// Pulse width (1ms to 2ms)
-reg [20:0] pulse_width;
-
+// 20 ms period
 always @(posedge clk) begin
     if(counter >= 2000000)
         counter <= 0;
@@ -17,14 +15,12 @@ always @(posedge clk) begin
         counter <= counter + 1;
 end
 
-// Convert angle to pulse width
+// angle → pulse width
 always @(*) begin
-    // 1ms = 100000 counts
-    // 2ms = 200000 counts
     pulse_width = 100000 + (angle * 555);
 end
 
-// PWM generation
+// PWM output
 always @(posedge clk) begin
     if(counter < pulse_width)
         pwm <= 1;

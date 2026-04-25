@@ -39,6 +39,16 @@ The system is verified using Verilog testbench and waveform analysis.
 * `docs/` → Diagrams & output images
 * `constraints/` → FPGA pin mapping
 
+## ▶️ How to Run (Simulation)
+
+1. Compile Verilog files:
+   iverilog -o radar_tb simulation/radar_tb.v verilog/*.v
+
+2. Run simulation:
+   vvp radar_tb
+
+3. View waveform:
+   gtkwave wave.vcd
 
 ## 📷 Results
 
@@ -53,6 +63,7 @@ The system is verified using Verilog testbench and waveform analysis.
 
 ### 🔹 Full Radar System Output
 ![Radar](docs/radar_waveform.png)
+
 ## 🚀 Future Scope
 
 * Multiple object tracking

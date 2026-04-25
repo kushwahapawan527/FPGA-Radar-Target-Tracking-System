@@ -42,13 +42,13 @@ The system is verified using Verilog testbench and waveform analysis.
 
 ## 📷 Results
 
-![Servo](docs/servowaveform.png)
+![Servo](docs/servo_waveform.png)
 
-![UART](docs/uartwaveform.png)
+![UART](docs/uart_waveform.png)
 
-![Ultrasonic](docs/ultrasonicwaveform.png)
+![Ultrasonic](docs/ultrasonic_waveform.png)
 
-![Radar](docs/radarwaveform.png)
+![Radar](docs/radar_waveform.png)
 
 ## 🚀 Future Scope
 
